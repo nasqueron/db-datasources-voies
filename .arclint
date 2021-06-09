@@ -1,0 +1,33 @@
+{
+    "linters": {
+        "chmod": {
+            "type": "chmod"
+        },
+        "shell": {
+            "type": "shellcheck",
+            "include": [
+                "(\\.sh$)"
+            ]
+        },
+        "filename": {
+            "type": "filename"
+        },
+        "json": {
+            "type": "json",
+            "include": [
+                "(^\\.arcconfig$)",
+                "(^\\.arclint$)",
+                "(\\.json$)"
+            ]
+        },
+        "python": {
+            "type": "flake8",
+            "severity": {
+                "F821": "advice"
+            },
+            "include": [
+                "(\\.py$)"
+            ]
+        }
+    }
+}
